@@ -30,6 +30,6 @@ h4.innerText = name
 
 function tai() {
   if (k != null) {
-    window.location.href = link
+    window.open(link, "_blank")
   }
 }
