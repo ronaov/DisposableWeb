@@ -1,6 +1,7 @@
 const url = new URLSearchParams(window.location.search)
 const h4 = document.getElementById('h4')
 const down = document.getElementById('down')
+const filename = url.get('b')
 
 var k = url.get('a')
 const id = url.get('id')
@@ -15,7 +16,11 @@ window.history.replaceState(null, '', window.location.pathname + "?" + url.toStr
 
 const link = "https://drive.google.com/uc?export=download&id=" + k
 if (k != null) {
-  var name = link.slice(link.indexOf("/", 31)+1, link.indexOf("?"))
+  if (filename != "") {
+    var name = filename
+  } else {
+    var name = "Link tải đã sẵn sàng"
+  }
 } else {
   var name = "Xin hãy vượt link"
   down.style.background = "red"
