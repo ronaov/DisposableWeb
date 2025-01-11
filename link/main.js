@@ -13,7 +13,7 @@ if (k != null) {
 
 window.history.replaceState(null, '', window.location.pathname + "?" + url.toString())
 
-const link = "https://www.dropbox.com/scl/fi/" + k + "=1"
+const link = "https://drive.google.com/uc?export=download&id=" + k
 if (k != null) {
   var name = link.slice(link.indexOf("/", 31)+1, link.indexOf("?"))
 } else {

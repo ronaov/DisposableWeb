@@ -5,19 +5,21 @@ const make = document.getElementById('make')
 
 function check() {
   var value = link.value
-  if (value.includes('www.dropbox.com')) {
+  if (value.includes('drive.google.com')) {
     h5.innerText = "Link chuẩn rồi đấy"
   }
   else {
-    h5.innerText = "Đây không phải link của Dropbox"
+    h5.innerText = "Đây không phải link của Driver"
   }
 }
 
 function tao() {
   var value = link.value
-  if (value.includes('www.dropbox.com')) {
+  if (value.includes('drive.google.com')) {
     var a = "s" + (Math.floor(Math.random() * 999999999) + 999999999)
-    var k = value.slice(31, value.length - 2)
-    window.location.href = `link/?a=${encodeURIComponent(k)}&id=${a}`
+    var k = value.slice(32, value.indexOf("/", 32))
+    const newURL = `https://ronaov.github.io/disposableweb/link/?a=${encodeURIComponent(k)}&id=${a}`
+    navigator.clipboard.writeText(newURL)
+    h5.innerText = "Đã tạo sao sao chép"
   }
 }
