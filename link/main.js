@@ -31,7 +31,7 @@ h4.innerText = name
 function tai() {
   if (k != null) {
     window.location.href = link
-    down.background = "gray"
+    down.style.background = "gray"
     down.innerText = "Downloading..."
   }
 }
