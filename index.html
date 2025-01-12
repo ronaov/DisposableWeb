@@ -13,9 +13,15 @@
   
   <div class="container">
     <div id="x">
-      <h5>Nhập tên file (Không bắt buộc)</h5>
+      <h5>Tên chủ sỡ hữu</h5>
+      <input id="csh" oninput="lcsh()">
+      <h5>Link ảnh nhỏ (<a href="https://imgur.com">Imgur</a>)</h5>
+      <input id="av" oninput="lk()">
+      <h5>Tên file (Không bắt buộc)</h5>
       <input id="ten">
-      <h5 id="h5">Nhập link</h5>
+      <h5>ID skin (không bắt buộc)</h5>
+      <input type="number" id="id">
+      <h5 id="h5">Link (<a href="https://drive.google.com/drive">Google Drive</a>)</h5>
       <input type="text" id="link" oninput="check()">
       <button id="make" onclick="tao()">TẠO</button>
     </div>
