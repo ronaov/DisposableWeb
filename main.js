@@ -39,7 +39,6 @@ function tao() {
     var k = value.slice(32, value.indexOf("/", 32))
     const newURL = `https://ronaov.github.io/DisposableWeb/link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}`
     navigator.clipboard.writeText(newURL)
-    window.location.href = newURL
     
     h5.innerText = "Đã tạo sao sao chép"
   }
