@@ -14,7 +14,7 @@ if (k != null) {
 
 window.history.replaceState(null, '', window.location.pathname + "?" + url.toString())
 
-const link = "https://drive.google.com/uc?export=download&id=" + k
+const link = "https://drive.google.com/uc?export=download&id=" + k + "&usp=drive_web"
 if (k != null) {
   if (filename != "") {
     var name = filename
