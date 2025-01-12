@@ -37,8 +37,8 @@ function tao() {
     var a = "s" + (Math.floor(Math.random() * 999999999) + 999999999)
     var b = encodeURIComponent(ten.value)
     var k = value.slice(32, value.indexOf("/", 32))
-    const newURL = `link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}`
-    //navigator.clipboard.writeText(newURL)
+    const newURL = `https://ronaov.github.io/DisposableWeb/link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}`
+    navigator.clipboard.writeText(newURL)
     window.location.href = newURL
     
     h5.innerText = "Đã tạo sao sao chép"
