@@ -5,14 +5,16 @@ const ten = document.getElementById('ten')
 const logo = document.getElementById('logo')
 const td = document.getElementById('td')
 
-const link = u.get('a')
+var link = u.get('a')
 const id = u.get('id')
-
-const link0 = "https://drive.google.com/uc?export=download&id=" + link
 
 if (link != "" && link) {
   localStorage.setItem(id, link)
+} else {
+  link = localStorage.getItem(id)
 }
+
+const link0 = "https://drive.google.com/uc?export=download&id=" + link
 
 u.delete('a')
 
