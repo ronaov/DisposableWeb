@@ -40,6 +40,6 @@ function tao() {
     const newURL = `https://ronaov.github.io/DisposableWeb/link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}`
     navigator.clipboard.writeText(newURL)
     
-    h5.innerText = "Đã tạo sao sao chép"
+    h5.innerText = "Đã sao chép vào bàn phím"
   }
 }
