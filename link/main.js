@@ -4,6 +4,7 @@ const anh = document.getElementById('anh')
 const ten = document.getElementById('ten')
 const logo = document.getElementById('logo')
 const td = document.getElementById('td')
+const csh = document.getElementById('csh')
 
 var link = u.get('a')
 const id = u.get('id')
@@ -61,6 +62,6 @@ function taixuong() {
   }
 }
 
-function vaokenh() {
+csh.addEventListener('click', () => {
   window.location.href = youtube
-}
+})
