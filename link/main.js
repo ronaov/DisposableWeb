@@ -60,11 +60,3 @@ function taixuong() {
     window.location.href = youtube
   }
 }
-
-logo.addEventListener('click', () => {
-  window.location.href = youtube
-})
-
-ten.addEventListener('click', () => {
-  window.location.href = youtube
-})
