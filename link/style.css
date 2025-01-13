@@ -63,6 +63,10 @@
   align-items: center;
 }
 
+i {
+  margin: 2px;
+}
+
 #csh {
   position: absolute;
   top: 80px;
