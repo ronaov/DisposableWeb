@@ -28,15 +28,15 @@ input {
 
 #make {
   height: 30px;
-  width: 100px;
-  background: #345;
+  width: 150px;
+  background: green;
   color: #fff;
   border-radius: 5px;
   border: 1px solid white;
   transition: 0.1s linear;
   position: absolute;
   bottom: -40px;
-  left: 50px;
+  left: 25px;
 }
 
 #make:active {
