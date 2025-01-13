@@ -35,7 +35,7 @@ if (!localStorage.getItem(id)) {
   bgid = Math.floor(Math.random()*3) + ".jpg"
   td.innerHTML = "Thế này là không ổn rồi"
   btn.style.background = "red"
-  btn.innerHTML = `<i class='bx bxl-youtube'></i> ${u.get('f').toUpperCase()}`
+  btn.innerHTML = `@${u.get('f').toUpperCase()}`
 }
 
 var test = document.createElement('img')
