@@ -58,6 +58,11 @@
   margin-top: 20px;
   color: white;
   text-shadow: 0 0 20px black;
+  font-size: 16px;
+}
+
+#btn i {
+  font-size: 16px;
 }
 
 #csh {
