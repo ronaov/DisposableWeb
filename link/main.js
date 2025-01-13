@@ -60,3 +60,7 @@ function taixuong() {
     window.location.href = youtube
   }
 }
+
+function vaokenh() {
+  window.location.href = youtube
+}
