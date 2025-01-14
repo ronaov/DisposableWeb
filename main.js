@@ -10,7 +10,7 @@ const kenh = document.getElementById('kenh')
 
 function check() {
   var value = link.value
-  if (value.includes('drive.google.com')) {
+  if (value.includes('www.dropbox.com')) {
     h5.innerText = "Link chuẩn rồi đấy"
   }
   else {
@@ -38,10 +38,10 @@ function lkenh() {
 
 function tao() {
   var value = link.value
-  if (value.includes('drive.google.com')) {
+  if (value.includes('www.dropbox.com')) {
     var a = "s" + (Math.floor(Math.random() * 999999999) + 999999999)
     var b = encodeURIComponent(ten.value)
-    var k = value.slice(32, value.indexOf("/", 32))
+    var k = value.slice(31, value.length - 5)
     const newURL = `https://ronaov.github.io/DisposableWeb/link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}&f=${kenh.value}`
     navigator.clipboard.writeText(newURL)
     

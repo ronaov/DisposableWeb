@@ -15,7 +15,7 @@ if (link != "" && link) {
   link = localStorage.getItem(id)
 }
 
-const link0 = "https://drive.google.com/uc?export=download&id=" + link
+const link0 = "https://www.dropbox.com/scl/fi/" + link + "&dl=1"
 
 u.delete('a')
 
