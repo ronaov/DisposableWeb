@@ -26,7 +26,7 @@ ten.innerText = u.get('c')
 if (u.get('b') != "") {
   td.innerText = u.get('b')
 } else {
-  td.innerText = link.slice(link.indexOf("/")+1, link.indexOf('?'))
+  td.innerText = link.slice(link.indexOf("/")+1, link.indexOf('?')).replace("-", " ")
 }
 
 
