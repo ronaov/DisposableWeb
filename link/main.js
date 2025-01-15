@@ -25,10 +25,9 @@ history.replaceState(null, '', newlink)
 ten.innerText = u.get('c')
 if (u.get('b') != "") {
   td.innerText = u.get('b')
-} else {
+} else if (link && link != "") {
   td.innerText = link.slice(link.indexOf("/")+1, link.indexOf('?')).replaceAll("-", " ")
 }
-
 
 const av = "https://imgur.com/" + u.get('d') + ".jpg"
 var bgid = "https://dl.ops.kgtw.garenanow.com/CHT/HeroTrainingLoadingNew_B36/" + u.get('e') + ".jpg"
