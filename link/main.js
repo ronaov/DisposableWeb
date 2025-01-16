@@ -15,10 +15,10 @@ if (link != "" && link) {
   link = localStorage.getItem(id)
 }
 
-if (u.get('g') === "0") {
-  var link0 = "https://www.dropbox.com/scl/fi/" + link + "&dl=1"
-} else {
+if (u.get('g') === "1") {
   var link0 = "https://drive.google.com/uc?export=download&id=" + link
+} else {
+  var link0 = "https://www.dropbox.com/scl/fi/" + link + "&dl=1"
 }
 
 u.delete('a')
