@@ -42,10 +42,10 @@ function tao() {
     var a = "s" + (Math.floor(Math.random() * 999999999) + 999999999)
     var b = encodeURIComponent(ten.value)
     if (value.includes('dropbox')) {
-      var k = value.slice(31, value.length - 5) + "0"
+      var k = value.slice(31, value.length - 5)
       var m = "0"
     } else {
-      var k = value.slice(32, value.indexOf("/", 32)) + "1"
+      var k = value.slice(32, value.indexOf("/", 32))
       var m = "1"
     }
     
