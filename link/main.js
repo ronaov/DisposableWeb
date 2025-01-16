@@ -15,11 +15,7 @@ if (link != "" && link) {
   link = localStorage.getItem(id)
 }
 
-if (u.get('g') === "1") {
-  var link0 = "https://drive.google.com/uc?export=download&id=" + link
-} else {
-  var link0 = "https://www.dropbox.com/scl/fi/" + link + "&dl=1"
-}
+var link0 = "https://drive.google.com/uc?export=download&id=" + link
 
 u.delete('a')
 
@@ -29,8 +25,6 @@ history.replaceState(null, '', newlink)
 ten.innerText = u.get('c')
 if (u.get('b') != "") {
   td.innerText = u.get('b')
-} else if (link && link != "") {
-  td.innerText = link.slice(link.indexOf("/")+1, link.indexOf('?')).replaceAll("-", " ")
 }
 
 const av = "https://imgur.com/" + u.get('d') + ".jpg"

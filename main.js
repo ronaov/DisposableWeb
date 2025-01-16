@@ -10,7 +10,7 @@ const kenh = document.getElementById('kenh')
 
 function check() {
   var value = link.value
-  if (value.includes('www.dropbox.com') || value.includes('drive.google.com')) {
+  if (value.includes('drive.google.com')) {
     h5.innerText = "Link chuẩn rồi đấy"
   }
   else {
@@ -38,21 +38,15 @@ function lkenh() {
 
 function tao() {
   var value = link.value
-  if (value.includes('www.dropbox.com') || value.includes('drive.google.com')) {
+  if (value.includes('drive.google.com')) {
     var a = "s" + (Math.floor(Math.random() * 999999999) + 999999999)
     var b = encodeURIComponent(ten.value)
-    if (value.includes('dropbox')) {
-      var k = value.slice(31, value.length - 5)
-      var m = "0"
-    } else {
-      var k = value.slice(32, value.indexOf("/", 32))
-      var m = "1"
-    }
+    var k = value.slice(32, value.indexOf("/", 32))
     
-    const newURL = `https://ronaov.github.io/DisposableWeb/link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}&f=${kenh.value}&g=${m}`
-    navigator.clipboard.writeText(newURL)
+    const newURL = `https://ronaov.github.io/DisposableWeb/link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}&f=${kenh.value}`
+    //navigator.clipboard.writeText(newURL)
     
-    //window.location.href = `link/?id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}&f=${kenh.value}`
+    window.location.href = `link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}&f=${kenh.value}`
     
     h5.innerText = "Đã sao chép vào bàn phím"
   }
