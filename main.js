@@ -44,9 +44,9 @@ function tao() {
     var k = value.slice(32, value.indexOf("/", 32))
     
     const newURL = `https://ronaov.github.io/DisposableWeb/link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}&f=${kenh.value}`
-    //navigator.clipboard.writeText(newURL)
+    navigator.clipboard.writeText(newURL)
     
-    window.location.href = `link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}&f=${kenh.value}`
+    //window.location.href = `link/?a=${encodeURIComponent(k)}&id=${a}&b=${b}&c=${encodeURIComponent(csh.value)}&d=${av.value.slice(18)}&e=${id.value}&f=${kenh.value}`
     
     h5.innerText = "Đã sao chép vào bàn phím"
   }
